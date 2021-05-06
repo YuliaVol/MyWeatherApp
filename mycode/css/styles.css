@@ -1,0 +1,57 @@
+.container {
+  margin: 50px 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  font-size: 50px;
+  color: #19456b;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.units {
+  font-size: small;
+  position: relative;
+  top: -20px;
+}
+
+.data {
+  font-size: 14px;
+}
+
+.second {
+  position: relative;
+  top: 1px;
+  display: block;
+  margin: 0 auto;
+}
+
+.third {
+  position: relative;
+  top: 1px;
+  display: block;
+  margin: 0 auto;
+}
+
+.day {
+  font-size: 10px;
+  text-align: left;
+}
+
+.cloud,
+.main,
+.rain {
+  color: #51adcf;
+}
+
+.snow {
+  color: #a7c5eb;
+}
+
+.sun {
+  color: #fed049;
+}
