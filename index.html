@@ -19,6 +19,17 @@
 <body>
     <div class="container">
         <div class="mx-auto" style="width: 800px;">
+            <div class="row gy-4">
+                <div class="col-6">
+                    <form id="search-form">
+                        <input type="text" placeholder="Enter city" autocomplete="off" autofocus="on" class="form-control"
+                            id="city-input" />
+                </div>
+                <div class="col-2">
+                    <input type="submit" class="btn btn-primary search search" value="SEARCH" id="search-button" />
+                </div>
+                </form>
+            </div>
             <h1 id="current-city">
                 Mainz, Germany
             </h1>
@@ -27,15 +38,16 @@
             </h6>
             <p>
             <div class="row">
-                <div class="col-4">
-                            <i class="fas fa-cloud main"></i>
+                <div class="col-6">
+                        <img src=""
+                        id="icon">
                                 <span class="temperature" id="temperature">
-                                    8 </span>
+                                    </span>
                                 <span class="units">
                                     <a href="#" id="celsius-link">°C</a> |
                                     <a href="#" id="fahrenheit-link">°F</a>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <div class="data">
                         <ul>
                             <li class="first"><span id="description">Mostly Cloudy</span></li>
@@ -47,82 +59,56 @@
             </div>
             </p>
             <div class="row">
-                <div class="col">
-                    <div class="day">
-                        Tuesday
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-cloud-rain rain"></i>
-                            7°C
-                        </div>
+                <div class="col-2">
+                    <div class="forecast">
+                        <ul>
+                            <li class="day">Tuesday</li>
+                            <li  i class="far fa-snowflake snow"></i></li>
+                            <li class="temp">7°C</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="day">
-                        Wednesday
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="far fa-snowflake snow"></i>
-                            7°C
-                        </div>
+                <div class="col-2">
+                    <div class="forecast">
+                        <ul>
+                            <li class="day">Wednesday</li>
+                            <li i class="far fa-snowflake snow"></i></li>
+                            <li class="temp">7°C</li>
+                        </ul>  
                     </div>
                 </div>
-                <div class="col">
-                    <div class="day">
-                        Thursday
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-sun sun"></i>
-                            11°C
-                        </div>
+                <div class="col-2">
+                    <div class="forecast">
+                        <ul>
+                            <li class="day">Thursday</li>
+                            <li i class="fas fa-sun sun"></i></li>
+                            <li class="temp">11°C</li>
+                        </ul> 
                     </div>
                 </div>
-                <div class="col">
-                    <div class="day">
-                        Friday
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-cloud cloud"></i>
-                            16°C
-                        </div>
+                <div class="col-2">
+                    <div class="forecast">
+                        <ul>
+                            <li class="day">Friday</li>
+                            <li i class="fas fa-cloud cloud"></i></li>
+                            <li class="temp">16°C</li>
+                        </ul>                     
                     </div>
                 </div>
-                <div class="col">
-                    <div class="day">
-                        Saturday
+                <div class="col-2">
+                    <div class="forecast">
+                        <ul>
+                            <li class="day">Saturday</li>
+                            <li i class="fas fa-cloud-rain rain"></i></li>
+                            <li class="temp">11°C</li>
+                        </ul>             
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-cloud-rain rain"></i>
-                            11°C
-                        </div>
-                    </div>
-                </div>
-                <div class="row gy-4">
-                    <div class="col-8">
-                        <form id="search-form">
-                            <input type="text" placeholder="Enter city" autocomplete="off" autofocus="on"
-                                class="form-control" id="city-input" />
-                    </div>
-                    <div class="col-2">
-                        <input type="submit" class="btn btn-primary search search" value="Search" id="search-button" />
-                    </div>
-                    <div class="col-2">
-                        <button type="submit" class="btn btn-success current" id="current-location">CURRENT</button>
-                    </div>
-                    </form>
                 </div>
             </div>
-            <p>
+            <h5>
                 GitHub repository link: <a href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
-            </p>
+            </h5>
             <script src="index.js">
             </script>
-            
 </body>
-
 </html>
