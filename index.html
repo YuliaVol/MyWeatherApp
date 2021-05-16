@@ -31,21 +31,23 @@
                 </form>
             </div>
             <h1 id="current-city">
-                Mainz, Germany
+                Mainz
             </h1>
             <h6>
-                Monday, April 5th
+                <span id="day"></span>
             </h6>
             <p>
             <div class="row">
                 <div class="col-6">
-                        <img src=""
-                        id="icon">
+                    <div class="clearfix weather-temperature">
+                        <img src="" alt="" id="icon" class="float-left" />
                                 <span class="temperature" id="temperature">
                                     </span>
                                 <span class="units">
                                     <a href="#" id="celsius-link">°C</a> |
                                     <a href="#" id="fahrenheit-link">°F</a>
+                                    </span> 
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="data">
@@ -104,10 +106,11 @@
                         </ul>             
                     </div>
                 </div>
+                <small>
+                    GitHub repository link: <a href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
+                </small>
             </div>
-            <h5>
-                GitHub repository link: <a href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
-            </h5>
+            
             <script src="index.js">
             </script>
 </body>

@@ -1,11 +1,10 @@
 .mx-auto {
   margin: 50px 0px;
   font-family: "Roboto", sans-serif;
-  border: 1px ridge;
+  border: 0px ridge;
   margin: 30px auto;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 10px 10px 4px #19456b;
   background-color: white;
   color: #19456b;
 }
@@ -21,7 +20,7 @@ h1 {
 }
 
 .temperature {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 600;
   padding: 0px 0px 0px 40px;
 }
@@ -99,7 +98,7 @@ ul {
   font-size: 20px;
 }
 
-h5 {
-  padding: 30px 0px;
-  font-size: 10px;
+small {
+  padding: 40px 0px;
+  font-size: 8px;
 }
