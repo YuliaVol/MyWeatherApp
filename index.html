@@ -16,11 +16,10 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <title>Weather App</title>
 </head>
-<body>
+<body class="page">
     <div class="container">
         <div class="mx-auto" style="width: 800px;">
                 <form id="search-form">
-                
                     <div class="row">
                         <div class="col-9">
                         <input
@@ -35,7 +34,7 @@
                 <div class="col-3">
                     <input
                     type="submit"
-                    class="btn btn-primary search search"
+                    class="btn btn-info search search"
                     value="SEARCH"
                     id="search-button"
                     />
@@ -45,7 +44,7 @@
                 <div class="overview">
                 <h1 id="current-city"></h1>
                 <h6>
-                    Last updated: <span id="day"></span>
+                    Last updated: <span class="current-date" id="day"></span>
                 </h6>
                 </div>
             <div class="row">
@@ -69,9 +68,9 @@
                 </div>
                     <div class="weather-forecast" id="forecast"> </div>
                     </div>
-                <small>
-                    GitHub repository link: <a href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
-                </small>
+                <p>
+                    GitHub repository link: <a class="link" href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
+                </p>
             </div>
         </div>
             <script src="index.js">
