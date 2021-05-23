@@ -112,10 +112,16 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coo
 axios.get(apiUrl).then(displayTemperature);
 }
 
+function getCurrentLocation(event) {
+event.preventDefault();
 navigator.geolocation.getCurrentPosition(showPosition);
-
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", clickSubmit);
+
+let currentButton = document.querySelector("#current-button");
+currentButton.addEventListener("click", getCurrentLocation);
+
 
 search("Mainz");
