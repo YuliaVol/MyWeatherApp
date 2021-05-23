@@ -14,21 +14,33 @@ h1 {
   text-shadow: 1px 1px 2px #19456b;
 }
 
+h6 {
+  padding: 0px 0px 40px 0px;
+}
+
 .main {
   font-size: 50px;
   color: #19456b;
 }
 
+.icon {
+  margin-right: 5px;
+  height: 100px;
+  width: 100px;
+}
+
 .temperature {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
-  padding: 0px 0px 0px 40px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
 }
 
 .units {
   font-size: small;
   position: relative;
-  top: -50px;
+  top: -20px;
 }
 
 ul {
@@ -42,6 +54,8 @@ ul {
 
 .data {
   font-size: 14px;
+  text-align: left;
+  padding: 10px 0px 0px 0px;
 }
 
 .second {
@@ -58,44 +72,10 @@ ul {
   margin: 0 auto;
 }
 
-.forecast {
-  font-size: 10px;
-  text-align: left;
-  border: 1px solid;
-  border-style: ridge;
-  height: 150px;
-  width: 120px;
-  border-radius: 5%;
-  display: flex;
-
-  align-items: center;
-  position: relative;
-  box-shadow: 4px 10px 4px #19456b;
-}
-
-.day {
+.weather-forecast {
   font-size: 12px;
-}
-
-.cloud,
-.main,
-.rain {
-  color: #51adcf;
-  font-size: 50px;
-}
-
-.snow {
-  color: #a7c5eb;
-  font-size: 50px;
-}
-
-.sun {
-  color: #fed049;
-  font-size: 50px;
-}
-
-.temp {
-  font-size: 20px;
+  text-align: left;
+  padding: 50px 0px 50px 0px;
 }
 
 small {

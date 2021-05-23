@@ -14,103 +14,67 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>Weather App</title>
 </head>
-
 <body>
     <div class="container">
         <div class="mx-auto" style="width: 800px;">
-            <div class="row gy-4">
-                <div class="col-6">
-                    <form id="search-form">
-                        <input type="text" placeholder="Enter city" autocomplete="off" autofocus="on" class="form-control"
-                            id="city-input" />
+                <form id="search-form">
+                
+                    <div class="row">
+                        <div class="col-9">
+                        <input
+                        type="text"
+                        placeholder="Enter city"
+                        autocomplete="off"
+                        autofocus="on"
+                        class="form-control"
+                        id="city-input"
+                        />
                 </div>
-                <div class="col-2">
-                    <input type="submit" class="btn btn-primary search search" value="SEARCH" id="search-button" />
+                <div class="col-3">
+                    <input
+                    type="submit"
+                    class="btn btn-primary search search"
+                    value="SEARCH"
+                    id="search-button"
+                    />
+                </div>
                 </div>
                 </form>
-            </div>
-            <h1 id="current-city">
-                Mainz
-            </h1>
-            <h6>
-                <span id="day"></span>
-            </h6>
-            <p>
+                <div class="overview">
+                <h1 id="current-city"></h1>
+                <h6>
+                    Last updated: <span id="day"></span>
+                </h6>
+                </div>
             <div class="row">
                 <div class="col-6">
                     <div class="clearfix weather-temperature">
-                        <img src="" alt="" id="icon" class="float-left" />
-                                <span class="temperature" id="temperature">
-                                    </span>
+                        <img src="" alt="" id="icon" class="icon" class="float-left"/>
+                                <strong class="temperature" id="temperature"></strong>
                                 <span class="units">
                                     <a href="#" id="celsius-link">°C</a> |
                                     <a href="#" id="fahrenheit-link">°F</a>
-                                    </span> 
+                                    </span>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="data">
                         <ul>
-                            <li class="first"><span id="description">Mostly Cloudy</span></li>
-                            <li class="second">Precipitations: <span id="humidity">90</span>%</li>
-                            <li class="third">Wind: <span id="wind">29</span>km/h</li>
+                            <li class="first"><strong><span id="description"></span></strong></li>
+                            <li class="second"><strong>Precipitations: </strong><span id="humidity"></span>%</li>
+                            <li class="third"><strong>Wind: </strong><span id="wind"></span>km/h</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            </p>
-            <div class="row">
-                <div class="col-2">
-                    <div class="forecast">
-                        <ul>
-                            <li class="day">Tuesday</li>
-                            <li  i class="far fa-snowflake snow"></i></li>
-                            <li class="temp">7°C</li>
-                        </ul>
+                    <div class="weather-forecast" id="forecast"> </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="forecast">
-                        <ul>
-                            <li class="day">Wednesday</li>
-                            <li i class="far fa-snowflake snow"></i></li>
-                            <li class="temp">7°C</li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="forecast">
-                        <ul>
-                            <li class="day">Thursday</li>
-                            <li i class="fas fa-sun sun"></i></li>
-                            <li class="temp">11°C</li>
-                        </ul> 
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="forecast">
-                        <ul>
-                            <li class="day">Friday</li>
-                            <li i class="fas fa-cloud cloud"></i></li>
-                            <li class="temp">16°C</li>
-                        </ul>                     
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="forecast">
-                        <ul>
-                            <li class="day">Saturday</li>
-                            <li i class="fas fa-cloud-rain rain"></i></li>
-                            <li class="temp">11°C</li>
-                        </ul>             
-                    </div>
-                </div>
                 <small>
                     GitHub repository link: <a href="https://github.com/YuliaVol/MyWeatherApp">MyWeatherApp</a>
                 </small>
             </div>
-            
+        </div>
             <script src="index.js">
             </script>
 </body>
