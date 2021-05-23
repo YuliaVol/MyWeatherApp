@@ -11,14 +11,19 @@
   margin: 30px auto;
   padding: 20px;
   border-radius: 20px;
-  background-color: #4b5063;
+  background-color: #0c0c0f;
   color: white;
   opacity: 0.85;
 }
 
 .search {
-  width: 150px;
+  width: 165px;
   background-color: #17a2b8;
+}
+
+.current {
+  width: 165px;
+  color: white;
 }
 
 h1 {
