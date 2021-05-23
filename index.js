@@ -105,23 +105,17 @@ function clickSubmit(event) {
   search(city);
 }
 
-//function searchLocation(position) {
- // let apiKey = "0f866e78ecb00f0a6104f9437d5ff173";
-//  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+function showPosition(position) {
+let apiKey = "0f866e78ecb00f0a6104f9437d5ff173";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
- // axios.get(apiUrl).then(displayTemperature);
-//}
+axios.get(apiUrl).then(displayTemperature);
+}
 
-//function getCurrentLocation(event) {
-//  event.preventDefault();
-//  navigator.geolocation.getCurrentPosition(searchLocation);
-//}
+navigator.geolocation.getCurrentPosition(showPosition);
 
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", clickSubmit);
-
-//let currentButton = document.querySelector("#current-location");
-//currentButton.addEventListener("click", getCurrentLocation);
 
 search("Mainz");
