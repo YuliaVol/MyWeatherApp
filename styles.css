@@ -13,17 +13,16 @@
   border-radius: 20px;
   background-color: #0c0c0f;
   color: white;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .search {
   width: 165px;
-  background-color: #17a2b8;
 }
 
 .current {
   width: 165px;
-  color: white;
+  border-color: #5bc2c2;
 }
 
 h1 {
@@ -36,7 +35,7 @@ h6 {
 
 .current-date {
   font-size: 20px;
-  color: #17a2b8;
+  color: #5bc2c2;
 }
 
 .weather-temperature {
@@ -110,5 +109,9 @@ p {
 }
 
 .link {
-  color: #36a5d5;
+  color: #5bc2c2;
+}
+
+.link:hover {
+  color: white;
 }
