@@ -11,7 +11,7 @@
   margin: 30px auto;
   padding: 20px;
   border-radius: 20px;
-  background-color: #0c0c0f;
+  background-color: rgb(10, 10, 10);
   color: white;
   opacity: 0.9;
 }
@@ -45,12 +45,10 @@ h6 {
 
 .icon {
   margin-right: 5px;
-  height: 100px;
-  width: 100px;
 }
 
 .temperature {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   margin: 0 auto;
   position: relative;
@@ -65,7 +63,7 @@ h6 {
 
 ul {
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .col {
@@ -100,11 +98,11 @@ ul {
 }
 
 .forecast-temperature-min {
-  color: lightgray;
+  color: rgb(172, 168, 168);
 }
 
 p {
-  padding: 10px 0px;
+  padding: 5px 0px;
   font-size: 12px;
 }
 
